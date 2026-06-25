@@ -135,6 +135,21 @@
   gap: 0.65rem;
 }
 
+.pet-card.perro {
+  border-color: #8ec5ff;
+  background: #f3f9ff;
+}
+
+.pet-card.gato {
+  border-color: #d8b5ff;
+  background: #fbf5ff;
+}
+
+.pet-card.otro {
+  border-color: #a8e0c1;
+  background: #f4fdf8;
+}
+
 .pet-card.urgent {
   border-color: #f3b7a2;
   background: #fff7f2;
@@ -148,13 +163,31 @@
   align-items: flex-start;
 }
 
-.pet-species {
+.species-badge {
   margin: 0 0 0.2rem;
-  color: #5b77a2;
-  font-size: 0.78rem;
+  display: inline-flex;
+  width: fit-content;
+  padding: 0.28rem 0.58rem;
+  border-radius: 999px;
+  font-size: 0.76rem;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
+}
+
+.species-badge.perro {
+  color: #1a5ea8;
+  background: #dff0ff;
+}
+
+.species-badge.gato {
+  color: #7b3fa2;
+  background: #f0e3ff;
+}
+
+.species-badge.otro {
+  color: #2e7d5b;
+  background: #e2f7eb;
 }
 
 .pet-card h3 {

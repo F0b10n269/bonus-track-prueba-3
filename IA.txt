@@ -1,2 +1,5 @@
 Propm 1: un refugio de animales quiere reemplazar su mural impreso por un directorio digital interactivo de mascotas en adopcion, exhibido en una pantalla de la recepcion, el equipo del refugio te entrega el listado de mascotas(mascotas.js) y te pide una aplicacion web SPA en React, simple, ordenada y segura, que permita ver las mascotas, distinguir su especie y resaltar los casos de adopcion urgente
 Resultado: el resultado fue util, logrando crera el directorio digital para el refugio
+
+Prompt 2: aplica un estilo diferenciado segun la especie (un color/etiqueta distinto para perro, gato, otro), renderiza el texto siempre como contenido JSX normal, no uses dangerouslySetlnnerHTML, no dejes credenciales, claves ni datos sensibles escritos en el codigo
+Resultado: el resultado fue util, ahora la interfaz distingue visualmente cada tipo de mascotas con un color y una etiqueta propia
