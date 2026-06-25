@@ -3,3 +3,6 @@ Resultado: el resultado fue util, logrando crera el directorio digital para el r
 
 Prompt 2: aplica un estilo diferenciado segun la especie (un color/etiqueta distinto para perro, gato, otro), renderiza el texto siempre como contenido JSX normal, no uses dangerouslySetlnnerHTML, no dejes credenciales, claves ni datos sensibles escritos en el codigo
 Resultado: el resultado fue util, ahora la interfaz distingue visualmente cada tipo de mascotas con un color y una etiqueta propia
+
+Prompt 3: para la lista de mascotas que reciba el array de mascotas por props, y recorra el array con .map() y renderiza un MascotaCard por cada mascota, asigna correctamente la prop key usando el id de cada elemento (no uses el indice del array), y en app.jsx renderiza ListaMascotas pasandole los datos importados
+Evaluacion: el  resultado fue util, La lista ahora: recibe el array de mascotas por props en ListaMascotas.jsx, recorre el array con .map(), renderiza un componente MascotaCard.jsx por cada mascota, usa correctamente la prop key con el id de cada elemento sin usar el índice, además App.jsx sigue pasando los datos importados a la lista.

@@ -1,6 +1,6 @@
 import MascotaCard from './MascotaCard'
 
-function ListaMascotas({ mascotas }) {
+function ListaMascotas({ mascotas = [] }) {
   if (mascotas.length === 0) {
     return <p className="empty-state">No hay mascotas para esta especie en este momento.</p>
   }
