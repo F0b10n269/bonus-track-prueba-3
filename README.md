@@ -1,16 +1,28 @@
-# React + Vite
+- Nombre: Fabian Calderon
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+AdoptaPet - Bonus Track
 
-Currently, two official plugins are available:
+Una aplicación web SPA desarrollada en React para un refugio de animales que permite visualizar mascotas en adopción, filtrar por especie, buscar por nombre y destacar casos de adopción urgente.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Instrucciones para ejecutar el proyecto localmente
 
-## React Compiler
+Requisitos previos
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Instalar Node.js y npm 
 
-## Expanding the Oxlint configuration
+Pasos a seguir:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+1. Clonar el repositorio
+git clone https://github.com/tu-usuario/bonus-track-prueba-3.git
+
+2. Entrar a la carpeta del proyecto
+cd bonus-track-prueba-3
+
+3. Instalar dependencias
+npm install
+
+4. Ejecutar el servidor de desarrollo
+npm run dev
+
+5. Abrir en el navegador
+http://localhost:5173
