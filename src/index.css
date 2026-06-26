@@ -1,5 +1,5 @@
 :root {
-  font-family: 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Segoe UI', Roboto, Inter, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color: #17304d;
@@ -18,7 +18,9 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: linear-gradient(135deg, #eef4ff 0%, #f9fbff 100%);
+  background:
+    radial-gradient(circle at top left, rgba(130, 180, 255, 0.18), transparent 28%),
+    linear-gradient(135deg, #eef4ff 0%, #f9fbff 100%);
 }
 
 button,
