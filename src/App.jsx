@@ -8,14 +8,22 @@ const especies = ['Todas', ...new Set(mascotas.map((mascota) => mascota.especie)
 
 function App() {
   const [filtro, setFiltro] = useState('Todas')
+  const [busqueda, setBusqueda] = useState('')
+
+  const busquedaNormalizada = useMemo(() => {
+    return busqueda.trim().slice(0, 20).toLowerCase()
+  }, [busqueda])
 
   const mascotasFiltradas = useMemo(() => {
-    if (filtro === 'Todas') {
-      return mascotas
-    }
+    return mascotas.filter((mascota) => {
+      const coincideEspecie = filtro === 'Todas' || mascota.especie === filtro
+      const nombre = mascota.nombre.toLowerCase()
+      const coincideBusqueda =
+        busquedaNormalizada.length === 0 || nombre.includes(busquedaNormalizada)
 
-    return mascotas.filter((mascota) => mascota.especie === filtro)
-  }, [filtro])
+      return coincideEspecie && coincideBusqueda
+    })
+  }, [filtro, busquedaNormalizada])
 
   const urgentes = mascotas.filter((mascota) => mascota.adopcionUrgente).length
 
@@ -43,8 +51,25 @@ function App() {
       </header>
 
       <section className="content-panel">
-        <FiltroEspecie especies={especies} filtro={filtro} onFilterChange={setFiltro} />
-        <ListaMascotas mascotas={mascotasFiltradas} />
+        <div className="toolbar">
+          <FiltroEspecie especies={especies} filtro={filtro} onFilterChange={setFiltro} />
+          <label className="search-field">
+            <span>Buscar por nombre</span>
+            <input
+              type="text"
+              value={busqueda}
+              onChange={(event) => setBusqueda(event.target.value.slice(0, 20))}
+              placeholder="Ej. Luna"
+              maxLength={20}
+            />
+          </label>
+        </div>
+
+        {mascotasFiltradas.length === 0 ? (
+          <p className="empty-state">no hay mascotas que coincidan</p>
+        ) : (
+          <ListaMascotas mascotas={mascotasFiltradas} />
+        )}
       </section>
     </main>
   )

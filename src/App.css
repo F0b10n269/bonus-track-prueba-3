@@ -79,7 +79,7 @@
   box-shadow: 0 12px 30px rgba(36, 64, 110, 0.08);
 }
 
-.filter-bar {
+.toolbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -88,9 +88,40 @@
   flex-wrap: wrap;
 }
 
+.filter-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 .filter-label {
   font-weight: 700;
   color: #17304d;
+}
+
+.search-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  color: #17304d;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.search-field input {
+  min-width: 220px;
+  border: 1px solid #d6e2f2;
+  border-radius: 999px;
+  padding: 0.62rem 0.9rem;
+  background: #f8fbff;
+  color: #17304d;
+}
+
+.search-field input:focus {
+  outline: 2px solid #8ec5ff;
+  border-color: #8ec5ff;
 }
 
 .filter-buttons {
@@ -254,8 +285,17 @@
     align-items: flex-start;
   }
 
+  .toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .filter-bar {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .search-field input {
+    min-width: 100%;
   }
 }
