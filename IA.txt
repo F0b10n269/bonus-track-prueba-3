@@ -15,3 +15,6 @@ Resultado: el resultado fue util, La implementación actual ya cumple con lo ped
 
 prompt 6: mejora los estilos CSS para que sea más profesional
 Evaluacion: el resultado fue util, la interfaz ahora tiene un aspecto más profesional y pulido, con un encabezado más limpio y jerárquico, filtros y buscador con mejor presentación, tarjetas de mascotas con mayor profundidad visual, botones y badges más refinados y fondo general más moderno
+
+prompt 7: en analisis.md, ayudame a hacer una tabla de analisis 3x7 para ingresar informacion de forma ordenada
+Evaluacion: el resultado fue util ya que me genero las casillas para yo poder ingresar la info de forma mas odernada y una recomendacion para ver mejor la tabla "open to the side"
